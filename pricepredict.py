@@ -10,11 +10,11 @@ st.markdown("<h1 style='text-align: center; color: black;'>Predict Your Cab Pric
 photo = Image.open('cab-booking-app.jpg')
 st.image(photo.resize([700,300]))
 
-model = pickle.load(open('1_model.pkl', 'rb'))
+model = pickle.load(open('lr_model.pkl', 'rb'))
 
-Scaler = pickle.load(open('1_scaler.pkl', 'rb'))
+Scaler = pickle.load(open('lr_scaler.pkl', 'rb'))
 
-encoder = pickle.load(open('1_enc.pkl', 'rb'))
+encoder = pickle.load(open('lr_enc.pkl', 'rb'))
 
 st.divider()
 
